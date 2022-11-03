@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
     <title>Code - Java</title>
 </head>
 <body>
-<div align="center">
+<div class="container-fluid text-center">
     <h1> Ola Mundo teste de funcionalidade</h1>
-<a href="/users">User</a>
+<a class="h2" th:href="@{/users}">Manage Users</a>
 </div>
 </body>
 </html>
